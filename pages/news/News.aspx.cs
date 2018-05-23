@@ -11,4 +11,10 @@ public partial class pages_news_News : System.Web.UI.Page
     {
 
     }
+
+    protected void Button_Article_Click(object sender, EventArgs e)
+    {
+        Session["NewsID"] = ((Button)sender).CommandArgument;
+        Response.Redirect("~/pages/news/NewsArticle.aspx");
+    }
 }

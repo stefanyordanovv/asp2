@@ -44,7 +44,7 @@
                 <p>by <a href="#"><%# Eval("Author") %></a>
                 </p>
                 <p><%# Eval("Content") %></p>
-                <a class="btn btn-primary" href="NewsArticle.aspx">Read More <i class="fa fa-angle-right"></i></a>
+                    <asp:Button ID="Button_Article" CommandArgument='<%# Eval("ID") %>' runat="server" Text="Read More" CssClass="btn btn-primary"  OnClick="Button_Article_Click" />
             </div>
         </div>
                 <hr />
